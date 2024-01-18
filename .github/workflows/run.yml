@@ -1,4 +1,4 @@
-name: AutoPost WP to Reddit v2
+name: Run python script
 
 on:
   # schedule:
