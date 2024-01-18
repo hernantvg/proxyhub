@@ -1,0 +1,27 @@
+name: AutoPost WP to Reddit v2
+
+on:
+  # schedule:
+  #   - cron: "25 */10 * * *"
+
+
+  push:
+   branches:
+   - master    
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setting up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11.1"
+          cache: 'pip'
+          cache-dependency-path: './requirements.txt'
+          architecture: "x64"
+      - name: Running Script
+        run: |
+          pip install -r requirements.txt
+          python ./run.py
