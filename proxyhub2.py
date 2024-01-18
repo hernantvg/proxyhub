@@ -8,7 +8,8 @@ def main():
     global proxies
 
     # Obtener proxies desde la URL proporcionada
-    proxies_url = 'https://raw.githubusercontent.com/casals-ar/proxy-list/main/https'
+    proxies_url = 'https://raw.githubusercontent.com/TheSpeedX/SOCKS-List/master/http.txt'
+    # proxies_url = 'https://raw.githubusercontent.com/casals-ar/proxy-list/main/https'
     proxies_doc = urlopen(proxies_url).read().decode('utf8')
 
     # Guardar proxies en el array
