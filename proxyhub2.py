@@ -25,8 +25,8 @@ def main():
         proxy_index = random_proxy()
         proxy = proxies[proxy_index]
 
-        req = Request('https://icanhazip.com')
-        req.set_proxy(proxy['ip'] + ':' + proxy['port'], 'https')
+        req = Request('http://dot3.top/GRPku')
+        req.set_proxy(proxy['ip'] + ':' + proxy['port'], 'http')
 
         # Realizar la llamada
         try:
